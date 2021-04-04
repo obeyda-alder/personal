@@ -1,0 +1,308 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "New Tegomin", serif;
+  font-family: "Train One", cursive;
+  font-family: "Open Sans", sans-serif;
+  /* background-image: url("<i class="fasfa-chess-board"></i>"); */
+}
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  overflow: hidden;
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding-left: 0;
+  padding-right: 0;
+  margin: auto;
+}
+.call {
+  top: 300px;
+  right: 10px;
+  position: fixed;
+  z-index: 10;
+}
+.call img {
+  max-width: 40px;
+  background-color: rgba(240, 248, 255, 0.164);
+  border-radius: 6px;
+  padding: 2px;
+  cursor: pointer;
+}
+.call img.active {
+  transform: rotate(-30deg);
+  transition: 0.5s all ease-in;
+}
+.forms.active {
+  display: block;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.589);
+  z-index: 19;
+  display: none;
+}
+
+.forms {
+  position: fixed;
+  width: 400px;
+  height: 500px;
+  background-color: #f6f6f6;
+  padding: 20px;
+  z-index: 20;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 40px 0 40px 0;
+  box-shadow: 4px 4px 15px 4px rgba(60, 61, 56, 0.527);
+}
+.form-control:focus {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(114, 42, 42, 0.445);
+}
+.forms input.form-control:hover {
+  border-bottom: 2px solid rgba(114, 42, 42, 0.445);
+}
+.forms input.form-control {
+  border: none;
+}
+.forms hr {
+  width: 50%;
+  margin-left: 25%;
+  height: 2px;
+}
+.forms legend {
+  text-align: center;
+  color: #6b6969c7;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.forms legend span {
+  color: #f39c12;
+}
+.forms input.form-control {
+  padding-left: 40px;
+}
+.form-switch {
+  margin-bottom: 10px;
+}
+.forms .times {
+  top: 5px;
+  right: 5px;
+  position: absolute;
+  color: #564545;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.forms .fa-user-alt {
+  position: absolute;
+  top: 123px;
+  left: 31px;
+}
+.forms .fa-envelope {
+  position: absolute;
+  top: 209px;
+  left: 31px;
+}
+.forms .fa-key {
+  position: absolute;
+  top: 321px;
+  left: 31px;
+}
+.forms span {
+  width: 10px;
+
+  padding: 0;
+  margin: 0;
+}
+.forms span img {
+  width: 50px;
+  height: 20px;
+  padding-top: 3px;
+  padding-left: 4px;
+  background-color: #a5a5a5;
+  box-shadow: -4px 4px 3px -2px #7c561a;
+  margin-left: 80%;
+  margin-top: 12%;
+}
+
+.navbar-light .navbar-brand {
+  margin-left: 20px;
+  font-size: 25px;
+  color: #b6b658;
+  font-weight: 700;
+  font-family: serif;
+}
+.navbar-light .navbar-brand span {
+  font-size: large;
+  font-family: initial;
+  color: rgb(201, 212, 149);
+}
+.navbar-expand-lg .navbar-collapse {
+  margin-right: 10px;
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+  font-size: 19px;
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 5px;
+  line-height: 0.4;
+}
+.navbar-expand-lg .navbar-nav .nav-item .active {
+  color: rgb(98, 98, 98);
+}
+.navbar-expand-lg .navbar-nav .nav-item:hover {
+  font-size: 16px;
+  border-top: 1px solid #b4b4a1;
+  border-width: 2px;
+  margin-left: 5px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(98, 98, 98);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.landing-page {
+  width: 100%;
+  height: 550px;
+}
+.landing-page .bg-main {
+  position: relative;
+  height: 100%;
+  background-image: url(../images/pexels-photo-3760069.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.landing-page .bg-main .content {
+  position: absolute;
+  top: 130px;
+  left: 396px;
+  line-height: 1.7;
+}
+.bg-main .content h1 {
+  font-family: "Times New Roman", Times, serif;
+  display: block;
+  margin-left: 38px;
+  margin-bottom: 30px;
+}
+.bg-main .content p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 22px;
+  margin-left: 20px;
+  border: 0.5px solid #474746b4;
+  border-radius: 4px;
+  padding: 5px;
+}
+.bg-main .content button {
+  margin-left: 20px;
+}
+.container .about-img {
+  width: 400px;
+  height: 400px;
+  margin-top: 62px;
+  margin-bottom: 20px;
+  display: inline;
+  margin-left: 194px;
+}
+.container .text-me {
+  width: 300px;
+  height: 300px;
+  float: right;
+  display: inline;
+  margin-top: 65px;
+  margin-right: 180px;
+  line-height: 2.3;
+}
+.progresses {
+  position: relative;
+  width: 100%;
+}
+.progresses .img {
+  background-image: url(/images/pexels-photo-326506.jpeg);
+  background-size: cover;
+  height: 600px;
+}
+.progresses .skills {
+  position: absolute;
+  z-index: 4;
+  top: 170px;
+  left: 130px;
+  color: #f6f6f6;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.progress {
+  width: 800px;
+  height: 250px;
+  background: rgba(224, 218, 218, 0.609);
+  right: 0;
+  top: 200px;
+  position: absolute;
+  display: block;
+}
+.progress p {
+  position: absolute;
+  margin: -20px 0px 0px 46px;
+  padding: 3px;
+  display: inline-block;
+}
+.progress p:first-child {
+  top: 31px;
+}
+.progress .progress-bar {
+  width: 70%;
+  height: 15px;
+  background-color: #88a3ee;
+  margin: 30px 20px 40px 40px;
+  border-radius: 3px;
+}
+
+.progress-bar span {
+  width: 100%;
+  height: auto;
+  background-color: #0f3752a4;
+  border-radius: 0 20% 20% 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.26);
+  /* background-color: rgb(255 255 255 /60%); */
+}
+.footer {
+  background-color: rgb(124, 120, 120);
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+.footer a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.footer a:hover {
+  color: rgb(58, 67, 75);
+  border-bottom: 2px solid rgb(58, 67, 75);
+}

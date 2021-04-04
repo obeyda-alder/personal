@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="styling/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Open+Sans:ital,wght@0,300;1,400;1,700&family=Train+One&display=swap"
+    rel="stylesheet">
+    <!-- Rander All Element Normally -->
+    <link rel="stylesheet" href="styling/normalize.css">
+    <!-- BootsTrap 5.0.0-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Main Tamlate CSS File -->
+    <link rel="stylesheet" href="styling/style.css">
+</head>
+<body>
+    <div class="popup"></div>
+    <!-- start form -->
+    <div class="call">
+        <img src="https://img.icons8.com/ios-filled/48/000000/headset.png" />
+    </div>
+   
+    <div class="forms">
+      <i class="fas fa-times fa-1x times"></i>
+      <form action="index.php">
+         <fieldset>
+                <legend>information <span>for contact</span></legend>
+                <hr>
+                <div class="mb-3">
+                    <label for="InputFullName" class="form-label">Full Name :</label>
+                    <i class="fas fa-user-alt"></i>
+                    <input type="text" class="form-control " id="InputFullName"  placeholder="Full Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="InputEmail1" class="form-label">Email :</label>
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" class="form-control " id="InputEmail1" aria-describedby="emailHelp" 
+                          placeholder="Email" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="InputPassword" class="form-label">Password :</label>
+                    <i class="fas fa-key"></i>
+                    <input type="password" class="form-control" id="InputPassword" placeholder="password" required>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" required>
+                </div>
+                <button type="submit" class="btn btn-outline-warning">Submit</button>
+              </fieldset>
+              <span><!-- Your Animated Signature Ready -->
+               <img src="/images/1099994781035708020421.gif"></span>
+         </form>
+    </div>
+    <!-- End form -->
+    <nav class="navbar navbar-expand-lg navbar-light container-lg">
+      <div class="container">
+            <a class="navbar-brand" href="#">OBEYDA <span> SY</span></a>
+            <div class=" collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active"  href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#" >Contact</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+   
+    <!-- End navbar -->
+
+    <!-- start landing page -->
+     <div class="landing-page">
+            <div class="bg-main">
+                <div class="overlay"></div>
+                 <div class="content ">
+                    <h1>Hello</h1>
+                    <p></p>
+                    <button type="button" class="btn btn-outline-secondary">HIRE ME</button>
+                 </div>
+                </div>
+            </div>
+    <!-- End landing page -->
+
+    <!-- Start About Me -->
+    <div class="container">
+        <img class="about-img" src="/images/pexels-photo-4008702.jpeg" alt="">
+        <div class="text-me">
+            <h2>ABOUT ME</h2>
+            <p>obeyda has been working to create high-quality single page applications for the last Tow years. He specializes in web
+                technologies such as HTML, CSS, and JavaScript and has experience with multiple front end and back end JavaScript
+                frameworks</p>
+            <button class="btn btn-primary" type="button">Call Me</button>
+        </div>
+    </div>
+
+    <!-- End About Me -->
+
+    <!-- Start progress -->
+    <div class="progresses">
+          <div class="overlay"></div>
+        <div class="img">   
+            <div class="container">
+                    <div class="skills">
+                        <h3>My Skills</h3>
+                        <p>I Provide the Best Quality</p>
+                    </div>
+                    <div class="progress">
+                        <p>HTML5</p>
+                        <div class="progress-bar">
+                            <span  data-progress="80">/</span>
+                        </div>
+                        <p>CSS3</p>
+                        <div class="progress-bar">
+                            <span data-progress="70">/</span>
+                        </div>
+                        <p>JAVA SCRIPT</p>
+                        <div class="progress-bar">
+                            <span data-progress="60">/</span>
+                        </div>
+                        <p>Vue.js</p>
+                        <div class="progress-bar">
+                            <span data-progress="60">/</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+         </div>
+    
+    <!-- End progress -->
+
+    <!-- Start Footer -->
+    <footer class="footer text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-2">
+            © 2020 Copyright by <a href="#">obeyda sarakbi</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- End Footer -->
+    <script src="/javascript/jquery-3.6.0.min.js"></script>
+    <script src="/javascript/jquery-3.6.0.js"></script>
+    <script src="/javascript/pro.js"></script>
+</body>
+</html>
